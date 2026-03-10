@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Pragati Scholarship for Girls 2026",
+        "provider": "AICTE Pragati Scheme",
+        "benefits": "₹50,000/year",
+        "eligibility": "B.Tech / Diploma",
+        "tags": ["B.Tech", "Girls", "National Level"]
+    },
+    {
+        "id": 2,
+        "title": "Vidyadhan Kerala Plus Two Scholarship",
+        "provider": "Vidyadhan Programs",
+        "benefits": "₹10,000/year",
+        "eligibility": "11th & 12th Std",
+        "tags": ["Kerala", "Income < 2Lakhs"]
+    },
+    {
+        "id": 3,
+        "title": "Women in Tech Scholarship (APAC)",
+        "provider": "Google Generation",
+        "benefits": "$2,500 (Approx ₹2L)",
+        "eligibility": "Computer Science (UG/PG)",
+        "tags": ["International", "Computer Science"]
+    }
+]

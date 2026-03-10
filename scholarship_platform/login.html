@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ScholarlyWomen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob-background">
+        <div class="blob shape-1"></div>
+        <div class="blob shape-2"></div>
+        <div class="blob shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Scholarly<span>Women</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="search.html">Scholarships</a>
+                <a href="schemes.html">Schemes</a>
+                <a href="document-checker.html">Document Checker</a>
+                <a href="login.html" class="btn btn-outline active">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Container -->
+    <main class="container login-container mt-100">
+        <div class="login-wrapper">
+            <div class="glass-panel login-panel">
+                <div class="text-center mb-4">
+                    <div class="provider-logo mx-auto mb-3" style="background: rgba(255, 51, 102, 0.2); color: var(--primary); font-size: 2rem;">
+                        <i class="fa-solid fa-user-lock"></i>
+                    </div>
+                    <h2>Welcome Back</h2>
+                    <p class="text-muted">Sign in to track your scholarship applications</p>
+                </div>
+                
+                <form class="login-form" id="loginForm">
+                    <!-- Added Alert Box for Errors -->
+                    <div id="login-alert" class="warning-box mb-3" style="display: none;"></div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="login-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group mt-3">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="login-password" placeholder="Password" required>
+                    </div>
+                    
+                    <div class="login-options mt-3">
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" id="login-submit-btn" class="btn btn-primary btn-large w-100 mt-4 shake-animation">
+                        Login <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    
+                    <div class="text-center mt-4">
+                        <p>Don't have an account? <a href="signup.html" style="color: var(--primary); font-weight: 600;">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- AI Chatbot (Re-used) -->
+    <button class="ai-chatbot-btn bubble-animation" aria-label="AI Chatbot" title="Scholarship AI Guide">
+        <i class="fa-solid fa-robot"></i>
+    </button>
+    <div class="ai-chatbot-panel glass-panel hidden">
+        <div class="chatbot-header">
+            <h4><i class="fa-solid fa-robot"></i> Scholarly AI Guide</h4>
+            <button class="close-chatbot"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="message bot">
+                Having trouble logging in? I can guide you to reset your password or create a new account!
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your question..." aria-label="Ask AI Chatbot">
+            <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

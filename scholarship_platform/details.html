@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Details - ScholarlyWomen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob-background">
+        <div class="blob shape-1"></div>
+        <div class="blob shape-2"></div>
+        <div class="blob shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Scholarly<span>Women</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="search.html" class="active">Scholarships</a>
+                <a href="schemes.html">Schemes</a>
+                <a href="document-checker.html">Document Checker</a>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scholarship Details Container -->
+    <main class="container details-page-container mt-100">
+        <button class="btn btn-outline back-btn" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i> Back to Search</button>
+
+        <div class="details-grid mt-4">
+            <!-- Left Column: Main Content -->
+            <div class="details-main glass-panel">
+                <div class="details-header">
+                    <div class="provider-logo large" style="background: rgba(255, 51, 102, 0.2); color: var(--primary);">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <div>
+                        <span class="provider-name">AICTE Pragati Scheme</span>
+                        <h1 class="details-title">Pragati Scholarship for Girls 2026</h1>
+                        <div class="tags mt-2">
+                            <span class="tag"><i class="fa-solid fa-indian-rupee-sign"></i> ₹50,000/year</span>
+                            <span class="tag"><i class="fa-solid fa-location-dot"></i> National Level</span>
+                            <span class="tag tag-urgent"><i class="fa-regular fa-clock"></i> Deadline: 30 April 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <section class="details-section">
+                    <h2><i class="fa-solid fa-circle-info"></i> About the Scholarship</h2>
+                    <p>The Pragati Scholarship is a Government of India scheme implemented by the All India Council for Technical Education (AICTE) to provide financial assistance to promising young women pursuing technical education (Degree or Diploma courses).</p>
+                    <p>This initiative aims to empower women through technical education, helping them to build successful careers and contribute to national development.</p>
+                </section>
+
+                <section class="details-section">
+                    <h2><i class="fa-solid fa-clipboard-check"></i> Eligibility Criteria</h2>
+                    <ul class="styled-list">
+                        <li><i class="fa-solid fa-check"></i> <strong>Gender:</strong> Must be a girl student.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Education Level:</strong> Must be admitted to the First year of a Degree/Diploma course in an AICTE-approved institution.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Family Limit:</strong> Up to two girls per family are eligible.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Income Limit:</strong> Family income from all sources must not exceed ₹8,000,000 per annum.</li>
+                    </ul>
+                </section>
+
+                <section class="details-section">
+                    <h2><i class="fa-solid fa-gift"></i> Benefits & Rewards</h2>
+                    <p>Selected students will receive the following financial support:</p>
+                    <ul class="styled-list">
+                        <li><i class="fa-solid fa-star"></i> <strong>Amount:</strong> ₹50,000 per annum.</li>
+                        <li><i class="fa-solid fa-star"></i> <strong>Coverage:</strong> The amount can be used for college fees, purchasing computers, stationeries, books, equipment, or software.</li>
+                        <li><i class="fa-solid fa-star"></i> <strong>Duration:</strong> Maximum 4 years for Degree courses and 3 years for Diploma courses.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Right Column: Action Panel -->
+            <div class="details-sidebar">
+                <div class="action-card glass-panel text-center">
+                    <h3 class="mb-2">Ready to Apply?</h3>
+                    <p class="text-muted mb-4">Ensure your profile is complete with all verified documents before applying.</p>
+                    
+                    <button class="btn btn-primary btn-large w-100 mb-3 shake-animation">
+                        Apply Now <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    
+                    <button class="btn btn-outline w-100 mb-4">
+                        <i class="fa-regular fa-bookmark"></i> Save for Later
+                    </button>
+
+                    <div class="deadline-countdown warning-box">
+                        <i class="fa-regular fa-clock"></i> Applications close in <strong>15 Days</strong>
+                    </div>
+                </div>
+
+                <div class="documents-card glass-panel mt-4">
+                    <h3><i class="fa-regular fa-folder-open"></i> Required Documents</h3>
+                    <ul class="doc-list">
+                        <li class="doc-item status-ok">
+                            <div class="doc-icon"><i class="fa-regular fa-file-pdf"></i></div>
+                            <div class="doc-info">
+                                <h5>10th / 12th Marksheet</h5>
+                                <span>Uploaded & Verified ✓</span>
+                            </div>
+                        </li>
+                        <li class="doc-item status-missing">
+                            <div class="doc-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                            <div class="doc-info">
+                                <h5>Family Income Certificate</h5>
+                                <span>Missing - Action Required</span>
+                            </div>
+                        </li>
+                        <li class="doc-item status-missing">
+                            <div class="doc-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                            <div class="doc-info">
+                                <h5>Aadhar Card</h5>
+                                <span>Missing - Action Required</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="document-checker.html" class="btn btn-outline w-100 mt-3 btn-small">Go to Document Checker</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- AI Chatbot (Re-used) -->
+    <button class="ai-chatbot-btn" aria-label="AI Chatbot" title="Scholarship AI Guide">
+        <i class="fa-solid fa-robot"></i>
+    </button>
+    <div class="ai-chatbot-panel glass-panel hidden">
+        <div class="chatbot-header">
+            <h4><i class="fa-solid fa-robot"></i> Scholarly AI Guide</h4>
+            <button class="close-chatbot"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="message bot">
+                Checking out the Pragati Scheme? I can answer any questions you have about the eligibility criteria for this specific scholarship!
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your question..." aria-label="Ask AI Chatbot">
+            <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

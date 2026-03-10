@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarlyWomen - Find Scholarships Made for Women</title>
+    <meta name="description" content="Discover hundreds of scholarships for girls and women. Search, check eligibility, and apply easily in one place.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob-background">
+        <div class="blob shape-1"></div>
+        <div class="blob shape-2"></div>
+        <div class="blob shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Scholarly<span>Women</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="search.html">Scholarships</a>
+                <a href="schemes.html">Schemes</a>
+                <a href="document-checker.html">Document Checker</a>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-wrapper">
+                    <span class="badge">✨ Empowering Women in Education</span>
+                </div>
+                <h1 class="hero-headline">Find Scholarships<br>Made for <span class="highlight">Women</span></h1>
+                <p class="hero-subtext">Discover hundreds of scholarships for girls and women. Search, check eligibility, and apply easily in one place. Your future begins here.</p>
+                
+                <div class="hero-actions">
+                    <a href="search.html" class="btn btn-primary btn-large" style="text-decoration: none;">
+                        <i class="fa-solid fa-search"></i> Search Scholarships
+                    </a>
+                    <button class="btn btn-secondary btn-large">
+                        <i class="fa-regular fa-user"></i> Create Profile
+                    </button>
+                </div>
+                
+                <div class="quick-search-card glass-panel">
+                    <h3><i class="fa-solid fa-bolt"></i> Quick Search</h3>
+                    <form class="quick-search-form">
+                        <div class="input-group">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <select aria-label="Course">
+                                <option value="" disabled selected>Select Course</option>
+                                <option value="btech">B.Tech</option>
+                                <option value="medical">Medical</option>
+                                <option value="arts">Arts & Humanities</option>
+                                <option value="science">Science</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <select aria-label="State">
+                                <option value="" disabled selected>Select State</option>
+                                <option value="kerala">Kerala</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="karnataka">Karnataka</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-school"></i>
+                            <select aria-label="Education Level">
+                                <option value="" disabled selected>Education Level</option>
+                                <option value="ug">Undergraduate</option>
+                                <option value="pg">Postgraduate</option>
+                                <option value="phd">Ph.D</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary search-submit">Find Now</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="image-showcase">
+                    <!-- Dynamic Image Placeholder -->
+                    <img src="assets/hero_image.png" alt="Empowered woman student smiling" class="main-image">
+                    
+                    <!-- Floating stat cards -->
+                    <div class="floating-card stat-card glass-panel card-1">
+                        <div class="icon-box"><i class="fa-solid fa-award"></i></div>
+                        <div class="stat-info">
+                            <h4>500+</h4>
+                            <p>Active Scholarships</p>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card success-card glass-panel card-2">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Student" class="avatar">
+                        <div class="success-info">
+                            <p class="success-text">"Got my B.Tech fully funded!"</p>
+                            <span class="success-name">- Riya, Kerala</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating AI Chatbot -->
+    <button class="ai-chatbot-btn bubble-animation" aria-label="AI Chatbot" title="Scholarship AI Guide">
+        <i class="fa-solid fa-robot"></i>
+    </button>
+    <div class="ai-chatbot-panel glass-panel hidden">
+        <div class="chatbot-header">
+            <h4><i class="fa-solid fa-robot"></i> Scholarly AI Guide</h4>
+            <button class="close-chatbot"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="message bot">
+                Hi! Looking for scholarships? Ask me something like: <em>"Scholarships for BTech girls in Kerala?"</em>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your question..." aria-label="Ask AI Chatbot">
+            <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
